@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizes</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div>
+            <div class=" te d-flex justify-content-center animate__animated animate__slideInDown ">
+                <h5 class="Quiz">Quiz App</h5>
+            </div>
+            <form id="form" class=" d-flex flex-column animate__animated animate__backInLeft  ">
+
+                <div class="form-floating w-50 m-auto mt-3">
+                    <select class="form-select" id="categoryMenu" aria-label="category Select">
+                        <option selected value="">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="27">Animals</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="22">Geography</option>
+                    </select>
+                    <label for="categoryMenu">Choose Category</label>
+                </div>
+
+
+                <div class="form-floating w-50 m-auto mt-3">
+                    <select class="form-select" id="difficultyOptions" aria-label="difficulty Select">
+                        <option selected value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <label for="difficultyOptions">Choose Difficulty Level</label>
+                </div>
+
+                <div class="form-floating w-50 m-auto mt-3">
+                    <input type="number" class="form-control" id="questionsNumber" placeholder="Number of Questions" />
+                    <label for="QuestionsNumber">Number of Questions</label>
+                </div>
+
+                <h2 id="btnStart" class=" w-50 m-auto btn btn-warning mt-3">start</h2>
+            </form>
+        </div>
+
+
+        <div id="questionContainer">
+
+
+        </div>
+
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
